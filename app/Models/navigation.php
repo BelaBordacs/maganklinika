@@ -9,4 +9,12 @@ class navigation extends Model
 {
     /** @use HasFactory<\Database\Factories\NavigationFactory> */
     use HasFactory;
+
+    protected $primaryKey = 'navigation_id';
+
+    protected $fillable = [
+        'name',
+        'URL',
+        'componentName'
+    ];
 }

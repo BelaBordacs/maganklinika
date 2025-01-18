@@ -14,10 +14,7 @@ return new class extends Migration
         Schema::create('doctors', function (Blueprint $table) {
             $table->id('doctor_id');
             $table->foreignId('user_id')->references('id')->on('users');
-            $table->string('name');
-            $table->integer('phone_number');
             $table->foreignId('specialisation_id')->references('specialisation_id')->on('specialisations');
-            $table->string('email');
             //????jelszó
             $table->timestamps();
         });

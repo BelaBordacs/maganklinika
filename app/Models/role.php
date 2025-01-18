@@ -9,4 +9,10 @@ class role extends Model
 {
     /** @use HasFactory<\Database\Factories\RoleFactory> */
     use HasFactory;
+
+    protected $primaryKey = 'role_id';
+
+    protected $fillable = [
+        'name',   
+    ];
 }

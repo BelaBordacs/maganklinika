@@ -10,13 +10,10 @@ class doctor extends Model
     /** @use HasFactory<\Database\Factories\DoctorFactory> */
     use HasFactory;
 
-    protected $primaryKey = 'doctor_id';
+        protected $primaryKey = 'doctor_id';
 
-    protected $fillable = [
-        'user_id',
-        'mane',
-        'phone_number',
-        'specialisation_id',
-        'email'
-    ];
+        protected $fillable = [
+            'user_id',
+            'specialisation_id',
+        ];
 }

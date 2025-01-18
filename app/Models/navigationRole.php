@@ -9,4 +9,13 @@ class navigationRole extends Model
 {
     /** @use HasFactory<\Database\Factories\NavigationRoleFactory> */
     use HasFactory;
+
+    protected $primaryKey = 'navigationRole_id';
+
+    protected $fillable = [
+        'ranking',
+        'parent',
+        'role_id',
+        'nav_id'
+    ];
 }
