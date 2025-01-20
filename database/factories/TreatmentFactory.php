@@ -17,7 +17,9 @@ class TreatmentFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'treatment_name'=>fake()->word(),
+            'treatment_length'=>fake()->time(),
+            'price'=>fake()->rand(5000,20000)
         ];
     }
 }

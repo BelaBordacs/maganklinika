@@ -17,7 +17,9 @@ class PatientFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'taj_number'=>fake()->unique()->numerify('############'),
+            'birth_date'=>fake()->date(),
+            'address'=>fake()->address(),
         ];
     }
 }

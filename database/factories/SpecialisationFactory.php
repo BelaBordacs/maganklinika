@@ -17,7 +17,7 @@ class SpecialisationFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'specialisation_name' =>fake()->word(),
         ];
     }
 }
