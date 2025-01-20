@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('patients', function (Blueprint $table) {
             //$table->id(); // taj_szám az id
-            $table->integer('taj_number')->primary();
+            $table->unsignedBigInteger('taj_number')->primary();
             $table->foreignId('user_id')->references('id')->on('users');
             $table->date('birth_date');
             $table->string('address');
